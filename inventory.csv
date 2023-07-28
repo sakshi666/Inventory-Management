@@ -1,0 +1,6 @@
+ID,Name,Category,Price,Quantity,Duration,Timestamp
+1,tomato,veggie,50,19,72,1
+2,milk,dairy,30,20,15,12
+3,cauliflower,veggie,30,7,10,1
+4,eggs,dairy,100,6,5,3
+4,eggs,dairy,100,6,2,4
