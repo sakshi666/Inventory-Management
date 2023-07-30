@@ -380,7 +380,7 @@ int main() {
             inventory.loadInventoryFromFile("inventory.csv");
               InventoryModifier inventoryModifier(inventory);
            
-            int productId, newQuantity,custTime;
+            int productId, newQuantity,custTime,flag=0;
             double discount = 0.0;
             double newprice=0.0;
             
@@ -389,10 +389,14 @@ int main() {
             try{
                 for(Product& p: products){
                     if(p.getId()==productId){
+                        flag=1;
                         break;
-                        }else{
-                            throw(p.getId());
                         }
+                        //else{
+                        //     throw(productId);
+                        // }
+                }if(!flag){
+                    throw(productId);
                 }
                 
             
